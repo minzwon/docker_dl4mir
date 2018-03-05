@@ -14,4 +14,6 @@ This is a docker image for the deep learning for music information retrieval res
 
 Just type:
 
-`nvidia-docker run -it minzwon/dl4mir /bin/bash`
+`docker pull minzwon/dl4mir`
+
+You should run the image with `nvidia-docker` to use your GPUs.
