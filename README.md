@@ -17,3 +17,9 @@ Just type:
 `docker pull minzwon/dl4mir`
 
 You should run the image with `nvidia-docker` to use your GPUs.
+
+When you want to build your image:
+
+`docker build . -t yourID/dl4mir`
+
+`docker push yourID/dl4mir`
