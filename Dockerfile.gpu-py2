@@ -7,6 +7,10 @@ RUN pip install --upgrade pip\
     && pip install --upgrade cython\
     && pip install madmom seaborn keras keras-vis
 
+# Pytorch install
+RUN pip install http://download.pytorch.org/whl/cu90/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl\ 
+    && pip install torchvision 
+
 # Essentia install
 RUN apt-get update \
     && apt-get install -y libyaml-0-2 libfftw3-3 libtag1v5 libsamplerate0 \
