@@ -35,6 +35,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && cd / && rm -rf /essentia/essentia
 
+RUN apt-get update \
+    && apt-get install -y libav-tools \
+    && apt-get install -y htop
+
 
 ENV PYTHONPATH /usr/local/lib/python3/dist-packages
 
