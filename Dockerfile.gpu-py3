@@ -37,7 +37,8 @@ RUN apt-get update \
 
 RUN apt-get update \
     && apt-get install -y libav-tools \
-    && apt-get install -y htop
+    && apt-get install -y htop \
+    && apt-get install -y vim
 
 
 ENV PYTHONPATH /usr/local/lib/python3/dist-packages
