@@ -5,6 +5,5 @@ gpu-py%:
 
 
 push:
-	docker push minzwon/dl4mir:gpu-py2
 	docker push minzwon/dl4mir:gpu-py3
 
