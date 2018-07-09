@@ -7,22 +7,20 @@
 
 - For deep learning: `pytorch`, `keras`, `tensorflow`, `sklearn`, `cuda`
 
-- and some useful python libraries including: `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`, `jupyter` and more!
+- and some useful python libraries including: `numpy`, `scipy`, `pandas`, `matplotlib`, `seaborn`, `jupyter`, `spotipy` and more!
 
 
 ## Versions
-`dl4mir:gpu-py2` python2 environment
 
 `dl4mir:gpu-py3` python3 environment 
+
+* I don't support python2 environment anymore
 
 ## Guideline
 
 ### Pull docker image
 Just type:
 
-	docker pull minzwon/dl4mir:gpu-py2
-
-or
 
 	docker pull minzwon/dl4mir:gpu-py3
 
@@ -40,8 +38,8 @@ Example:
 ### Build docker image
 When you want to build your image:
 
-`make gpu-py2` or `make gpu-py3`
+`make gpu-py3`
 
 and
 
-`make push gpu-py2` or `make push gpu-py3`
+`make push gpu-py3`

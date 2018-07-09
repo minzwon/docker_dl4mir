@@ -1,4 +1,4 @@
-build: gpu-py2 gpu-py3
+build: gpu-py3
 
 gpu-py%:
 	docker build -f Dockerfile.$@ . -t minzwon/dl4mir:$@

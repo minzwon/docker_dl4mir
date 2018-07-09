@@ -1,17 +1,17 @@
-FROM tensorflow/tensorflow:latest-gpu-py3
+FROM tensorflow/tensorflow:1.8.0-gpu-py3
 
 ENV LANG C.UTF-8
 
 # pip libraries
-RUN pip3 install --upgrade pip\
-    && pip3 install virtualenv librosa fire tqdm\
-    && pip3 install --upgrade cython\
-    && pip3 install madmom seaborn keras keras-vis
+RUN pip install --upgrade pip\
+    && pip install virtualenv librosa fire tqdm glob3\
+    && pip install --upgrade cython\
+    && pip install madmom seaborn keras keras-vis spotipy
 
 
 # Pytorch install
-RUN pip3 install torch\
-    && pip3 install torchvision
+RUN pip install torch\
+    && pip install torchvision
 
 
 # Essentia install
