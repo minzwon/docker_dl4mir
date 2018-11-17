@@ -1,9 +1,9 @@
-build: gpu-py3
+build: latest-gpu-py3 latest-cpu-py3
 
-gpu-py%:
+latest%:
 	docker build -f Dockerfile.$@ . -t minzwon/dl4mir:$@
 
-
 push:
-	docker push minzwon/dl4mir:gpu-py3
+	docker push minzwon/dl4mir:latest-gpu-py3
+	docker push minzwon/dl4mir:latest-cpu-py3
 

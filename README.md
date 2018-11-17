@@ -22,14 +22,14 @@
 Just type:
 
 
-	docker pull minzwon/dl4mir:gpu-py3
+	docker pull minzwon/dl4mir:latest-gpu-py3
 
 ### Run docker container
 You should run the image with `nvidia-docker` to use your GPUs.
 
 Example:
 
-	nvidia-docker run -d -it -p 8888:8888 -v HOST_DIRECTORY:CONTAINER_DIRECTORY --name ANYNAME minzwon/dl4mir:gpu-py3 /bin/bash
+	nvidia-docker run -d -it -p 8888:8888 -v HOST_DIRECTORY:CONTAINER_DIRECTORY --name ANYNAME minzwon/dl4mir:latest-gpu-py3 /bin/bash
 	
 `-d` is a detached mode. This makes your container to run on the background. You can continue the container with:
 
@@ -38,8 +38,8 @@ Example:
 ### Build docker image
 When you want to build your image:
 
-`make gpu-py3`
+`make latest-gpu-py3`
 
 and
 
-`make push gpu-py3`
+`make push latest-gpu-py3`
